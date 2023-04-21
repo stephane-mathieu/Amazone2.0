@@ -1,8 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: true,
+
+// next.config.js
+
+module.exports = {
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
+  images: {
+    domains: ['links.papareact.com', 'fakestoreapi.com']
   },
+  experimental: {
+    appDir: true
+  }
 }
 
-module.exports = nextConfig
